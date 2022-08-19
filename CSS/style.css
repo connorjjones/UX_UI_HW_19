@@ -1,0 +1,198 @@
+
+h1, h2, h3, h4, h5, h6, li, p, button {
+    font-family: 'Albert Sans', sans-serif;
+}
+h1{
+    font-size: 3em;
+}
+body{
+    background-color: #E9E2D0;
+}
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+.logo{
+    text-align: center;
+    /* outline: 1px solid red; */
+    margin-left: 9%;
+}
+nav{
+    width: 98%;
+    padding: 1%;
+    /* outline: 1px solid red; */
+}
+.nav{
+    margin-right: 9%;
+    float: right !important;
+    /* outline: 1px solid red; */
+}
+ul{
+    width: 50%;
+    justify-content: center;
+}
+.navItem{
+    padding: 10px;
+    text-align: center;
+    float: right;
+}
+.hero{
+    width: 100%;
+    height: 700px;
+}
+.heroImg{
+    background-image: url("../Images/indy-7.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 65%;
+    margin-right: 10%;
+    float: right;
+    margin-bottom: 56px;
+    padding: 25px;
+}
+.content{
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+    position: relative;
+    left: -20%;
+    top: 25%;
+    justify-content: center;
+    box-shadow: -10px 10px #969080;
+}
+.mySkills{
+    background-color: #969080;
+}
+.sectionHeader{
+    text-align: center;
+    padding-top: 25px;
+}
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flexChild{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+.workGrid{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: 
+        "cwwcImg cwwcContent"
+        "doeContent doeImg"
+        "evergreenImg evergreenContent"
+        ;
+}
+.cwwcImg{
+    grid-area: cwwcImg;
+    background-image: url(../Images/CWWC_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cwwcContent{
+    grid-area: cwwcContent;
+    padding: 20px;
+}
+.doeImg{
+    grid-area: doeImg;
+    background-image: url(../Images/DOE_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.doeContent{
+    grid-area: doeContent;
+    padding: 20px;
+}
+.evergreenImg{
+    grid-area: evergreenImg;
+    background-image: url(../Images/EverGreen_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* outline: 1px solid red; */
+}
+.evergreenContent{
+    grid-area: evergreenContent;
+    padding: 20px;
+}
+button{
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    background-color: #665E40;
+}
+footer{
+    background-color: #665E40;
+}
+.footerContent{
+    height: 200px;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+.footerNav{
+    color: white;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    .hero{
+        height: 800px;
+    }
+    .heroImg{
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 200px;
+        padding: 0;
+    }
+    .content{
+        background-color: white;
+        padding: 10px;
+        width: 80%;
+        position: relative;
+        left: 8%;
+        top: 70%;
+        justify-content: center;
+    }
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexChild{
+        width: 100%;
+    }
+    .workGrid{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr 400px 1fr 400px 1fr;
+        grid-template-areas: 
+            "cwwcImg"
+            "cwwcContent"
+            "doeImg"
+            "doeContent"
+            "evergreenImg"
+            "evergreenContent"
+            ;
+    }
+}
