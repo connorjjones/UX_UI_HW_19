@@ -87,6 +87,7 @@ nav{
 }
 .mySkills{
     background-color: #969080;
+    color: white;
 }
 .sectionHeader{
     text-align: center;
@@ -110,19 +111,19 @@ nav{
     width: 150px;
 }
 #skillOne{
-    background-image: url(../Images/noun-information-architecture-1871614\ 1.png);
+    background-image: url(../Images/informationArch_Icon_WhiteBackdrop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #skillTwo{
-    background-image: url(../Images/noun-interview-1603594\ 1.png);
+    background-image: url(../Images/interview_icon_whitebackdrop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #skillThree{
-    background-image: url(../Images/noun-web-development-1353982\ 1.png);
+    background-image: url(../Images/webDevelopment_Icon_WhiteBackdrop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
