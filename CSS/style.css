@@ -7,6 +7,16 @@ h1, h2, h3, h4, h5, h6, li, p, button {
 h1{
     font-size: 3em;
 }
+h2{
+    font-size: 1.9em;
+}
+h3{
+    font-size: 1.6em;
+}
+button, p, li{
+    font-size: 1.25em;
+    line-height: 1.6;
+}
 body{
     background-color: #E9E2D0;
 }
@@ -19,24 +29,35 @@ body{
     /* outline: 1px solid red; */
     margin-left: 9%;
 }
+.navigation{
+    height: 100px;
+}
 nav{
     width: 98%;
     padding: 1%;
     /* outline: 1px solid red; */
 }
 .nav{
+    width: 50%;
+    justify-content: center;
     margin-right: 9%;
     float: right !important;
     /* outline: 1px solid red; */
-}
-ul{
-    width: 50%;
-    justify-content: center;
 }
 .navItem{
     padding: 10px;
     text-align: center;
     float: right;
+    font-weight: bold;
+    font-size: 1em;
+}
+.navItem:hover{
+    cursor: pointer !important;
+    /* text-decoration: underline !important; */
+    border-bottom: 3px solid white;
+}
+.hamMenu{
+    display: none;
 }
 .hero{
     width: 100%;
@@ -56,7 +77,7 @@ ul{
 }
 .content{
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     width: 40%;
     position: relative;
     left: -20%;
@@ -74,13 +95,37 @@ ul{
 .flexContainer{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 .flexChild{
+    display: flex;
     width: 30%;
-    text-align: center;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.skillIcon{
+    height: 150px;
+    width: 150px;
+}
+#skillOne{
+    background-image: url(../Images/noun-information-architecture-1871614\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#skillTwo{
+    background-image: url(../Images/noun-interview-1603594\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#skillThree{
+    background-image: url(../Images/noun-web-development-1353982\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .workGrid{
     margin-left: 10%;
@@ -105,7 +150,6 @@ ul{
 }
 .cwwcContent{
     grid-area: cwwcContent;
-    padding: 20px;
 }
 .doeImg{
     grid-area: doeImg;
@@ -118,7 +162,6 @@ ul{
 }
 .doeContent{
     grid-area: doeContent;
-    padding: 20px;
 }
 .evergreenImg{
     grid-area: evergreenImg;
@@ -132,7 +175,9 @@ ul{
 }
 .evergreenContent{
     grid-area: evergreenContent;
-    padding: 20px;
+}
+.cardContent{
+    padding: 0px 30px 30px 30px;
 }
 button{
     border-radius: 25px;
@@ -140,25 +185,29 @@ button{
     color: white;
     background-color: #665E40;
 }
-footer{
+.siteFooter{
     background-color: #665E40;
-}
-.footerContent{
-    height: 200px;
-    width: 100%;
-    color: white;
-    margin: 0 auto;
-    /* outline: 1px solid red; */
+    height: 100px;
 }
 .footerNav{
+    float: left;
     color: white;
-    margin: 0 auto;
-    /* outline: 1px solid red; */
-    justify-content: center;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.25em;
+    }
+    button, p, li{
+        font-size: 1em;
+    }
     .hero{
-        height: 800px;
+        height: 740px;
     }
     .heroImg{
         width: 100%;
@@ -166,6 +215,14 @@ footer{
         float: none;
         margin-bottom: 200px;
         padding: 0;
+    }
+    .nav{
+        display: none;
+    }
+    .hamMenu{
+        display: block;
+        padding: 15px;
+        float: right;
     }
     .content{
         background-color: white;
